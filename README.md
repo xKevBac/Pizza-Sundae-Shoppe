@@ -5,4 +5,5 @@ A small little project in creating an UI/UX for client to add specific toppings 
 
 # Steps to run the application:
 1) Make sure to download Live Server extension in the Visual Studio
-2) access the index.html and press the Go live button at the bottom right corner
+2) Access the index.html
+3) Click the Go live button at the bottom right corner
