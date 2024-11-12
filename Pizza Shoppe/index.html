@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Build Your Pizza</title>
+</head>
+<body>
+    <header>Kevin's Pizza Shoppe</header>
+
+    <div class="page-container">
+        <div class="page1">
+            <div class="pizza-container" id="pizza">
+                <img src="media/crust-regular.png" id="crust" alt="Crust">
+                <img src="media/sauce-red.png" id="sauce" alt="Sauce">
+                <img src="media/cheese.png" id="cheese" alt="Cheese">
+               
+                <img src="" id="topping-peperoni" alt="Pepperoni" style="display: none;">
+                <img src="" id="topping-sausage" alt="Sausage" style="display: none;">
+                <img src="" id="topping-mushrooms" alt="Mushrooms" style="display: none;">
+                <img src="" id="topping-olives" alt="Olives" style="display: none;">
+                <img src="" id="topping-pineapples" alt="Pineapples" style="display: none;">
+                <img src="" id="topping-sardines" alt="Sardines" style="display: none;">
+            </div>
+
+            <div class="container">
+                <div>
+                    <h3>Choose Your Crust</h3>
+                    <label>
+                        <input type="radio" name="crust" value="regular" onclick="updatePizza('crust', 'crust-regular.png')" checked> Regular
+                    </label>
+                    <label>
+                        <input type="radio" name="crust" value="thin" onclick="updatePizza('crust', 'crust-thin.png')"> Thin
+                    </label>
+                    <label>
+                        <input type="radio" name="crust" value="stuffed" onclick="updatePizza('crust', 'crust-stuffed.png')"> Stuffed
+                    </label>
+                </div>
+        
+                <div>
+                    <h3>Choose Your Sauce</h3>
+                    <label>
+                        <input type="radio" name="sauce" value="tomato" onclick="updatePizza('sauce', 'sauce-red.png')" checked> Tomato Sauce
+                    </label>
+                    <label>
+                        <input type="radio" name="sauce" value="white" onclick="updatePizza('sauce', 'sauce-white.png')"> White Sauce
+                    </label>
+                    <label>
+                        <input type="radio" name="sauce" value="pesto" onclick="updatePizza('sauce', 'sauce-pesto.png')"> Pesto Sauce
+                    </label>
+                </div>
+        
+                <div>
+                    <h3>Add Your Toppings</h3>
+                    <label>
+                        <input type="checkbox" name="topping" value="pepperoni" onclick="updateTopping('topping-peperoni', 'pepperoni.png')"> Pepperoni
+                    </label>
+                    <label>
+                        <input type="checkbox" name="topping" value="sausage" onclick="updateTopping('topping-sausage', 'sausage.png')"> Sausage
+                    </label>
+                    <label>
+                        <input type="checkbox" name="topping" value="mushrooms" onclick="updateTopping('topping-mushrooms', 'mushrooms.png')"> Mushrooms
+                    </label>
+                    <label>
+                        <input type="checkbox" name="topping" value="olives" onclick="updateTopping('topping-olives', 'olives.png')"> Olives
+                    </label>
+                    <label>
+                        <input type="checkbox" name="topping" value="pineapples" onclick="updateTopping('topping-pineapples', 'pineapple.png')"> Pineapples
+                    </label>
+                    <label>
+                        <input type="checkbox" name="topping" value="sardines" onclick="updateTopping('topping-sardines', 'sardines.png')"> Sardines
+                    </label>
+                </div>
+            </div>
+            <button id="add-to-cart" onclick="addToCart()">Add to Cart</button>
+        </div>
+
+        <div class="page2">
+            <h2>Shopping Cart</h2>
+        </div>
+    </div>
+
+    <script src ="scripts/script.js"></script>
+</body>
+</html>

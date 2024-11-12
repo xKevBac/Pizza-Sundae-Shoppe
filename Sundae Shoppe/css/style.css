@@ -1,0 +1,91 @@
+body{
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #ff6347;
+    color: white;
+    padding: 20px 0;
+    font-size: 2em;
+}
+
+.container {
+    margin: 20px auto;
+    max-width: 600px;
+    text-align: left;
+}
+
+.container h3 {
+    background-color: #ff6347;
+    color: white;
+    padding: 10px;
+}
+
+.container label {
+    display: block;
+    margin: 5px 0;
+}
+.sundae-container{
+    position: relative;
+    width: 550px;
+    height: 550px;
+    margin: 20px auto;
+}
+
+.sundae-container img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.page-container {
+    display: flex; /* Convert to a flexbox*/
+    justify-content: space-between; /* Create space between page1 and page2 */
+    align-items: flex-start; /* Align items at the top */
+    padding: 20px;
+}
+
+.page1 {
+    flex: 1; /* Take available space */
+}
+
+.page2 {
+    width: 800px; /* Set a fixed width for the shopping cart. We can edit this to our liking */
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+h2 {
+    background-color: #ff6347;
+    color: white;
+    padding: 20px 0;
+    font-size: 2em;
+}
+
+.item-cell {
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    border-bottom: 1px solid #ddd;
+}
+
+.item-image {
+    width: 100px;
+    height: 100px;
+}
+
+.item-description {
+    flex: 3;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.item-image img {
+    width: 100px;
+    height: 100px;
+}

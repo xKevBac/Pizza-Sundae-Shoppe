@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Build Your Sundae</title>
+</head>
+<body>
+    <header>Kevin's Ice Cream Shoppe</header>
+
+    <div class="page-container">
+        <div class="page1">
+            <div class="sundae-container" id="sundae">
+                <!-- Images for Sundae Layer -->
+                <img src="media/background.png" id="background" alt="Background">
+                <img src="" id="banana" atl="Banana" style="display: none;">
+                <img src="media/vanilla_icecream.png" id="icecream" alt="Ice cream">
+                <img src="" id="sauce" alt="sauce" style="display: none;">
+                <img src="media/bowl.png" id="bowl" alt="Bowl">
+                <img src="" id="sprinkle" atl="Sprinkle" style="display: none;">
+                <img src="" id="cherry" atl="Cherry" style="display: none;">
+                <img src="" id="peanut" atl="Peanut" style="display: none;">
+            </div>
+            
+            <div class="container">
+                <div>
+                    <h3>Choose Your Ice Cream Flavor</h3>
+                    <label>
+                        <input type="radio" name="flavor" value="vanilla" onclick="updateBowl('icecream', 'vanilla_icecream.png')" checked> Vanilla
+                    </label>
+                    <label>
+                        <input type="radio" name="flavor" value="chocolate" onclick="updateBowl('icecream', 'chocolate_icecream.png')"> Chocolate
+                    </label>
+                    <label>
+                        <input type="radio" name="flavor" value="strawberry" onclick="updateBowl('icecream', 'strawberry_icecream.png')"> Strawberry
+                    </label>
+                    <label>
+                        <input type="radio" name="flavor" value="sherbert" onclick="updateBowl('icecream', 'sherbert_icecream.png')"> Sherbert
+                    </label>
+                </div>
+        
+                <div>
+                    <h3>Choose Your Sauce</h3>
+                    <label>
+                        <input type="radio" name="sauce" value="none" onclick="updateBowl('sauce')" checked> None
+                    </label>
+                    <label>
+                        <input type="radio" name="sauce" value="chocolate" onclick="updateBowl('sauce', 'chocolate_sauce.png')"> Chocolate Sauce
+                    </label>
+                    <label>
+                        <input type="radio" name="sauce" value="caramel" onclick="updateBowl('sauce', 'caramel_sauce.png')"> Caramel Sauce
+                    </label>
+                </div>
+        
+                <div>
+                    <h3>Add Your Toppings</h3>
+                    <label>
+                        <input type="checkbox" name="topping" value="banana" onclick="updateTopping('banana', 'banana.png')"> Banana
+                    </label>
+                    <label>
+                        <input type="checkbox" name="topping" value="sprinkles" onclick="updateTopping('sprinkle', 'sprinkles.png')"> Sprinkles
+                    </label>
+                    <label>
+                        <input type="checkbox" name="topping" value="cherry" onclick="updateTopping('cherry', 'cherry.png')"> Cherry
+                    </label>
+                    <label>
+                        <input type="checkbox" name="topping" value="peanut" onclick="updateTopping('peanut', 'peanuts.png')"> Peanuts
+                    </label>
+                </div>
+            </div>
+            <button id="add-to-cart" onclick="addToCart()">Add to Cart</button>
+        </div>
+
+        <div class="page2">
+            <h2>Shopping Cart</h2>
+        </div>
+    </div>
+
+
+    
+
+    <script src ="scripts/script.js"></script>
+</body>
+</html>
